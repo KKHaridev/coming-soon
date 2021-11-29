@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+    
+}
+.container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    display: flex;
+}
+.section1{
+    flex: none;
+    background: url("./assetsb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.section1 .image{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin: 0px 2rem;
+}
+.section1 .image img{
+    width: 4rem;
+    height: auto;
+}
+.section1 .image h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.section1 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.section1 .content p{
+    margin-top: 20px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 500;
+}
+.section1 .bottom{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .bottom .fas{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+}
+.section1 .bottom .fas:hover{
+    color: rgb(39, 33, 33);
+    border: 2px solid rgb(73, 67, 67);
+}
+.section1 .footer{
+    text-align: right;
+    margin-right: 20px;
+    opacity: .5;
+}
+.section1 a{
+    text-decoration: none;
+}
+.section2{
+    flex: none;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+}
+.section2 .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
